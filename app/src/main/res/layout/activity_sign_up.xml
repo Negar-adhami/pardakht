@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_margin="20dp"
+                android:background="@drawable/ic_logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp" />
+            <TextView
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:text="ثبت نام"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="@font/iran_sans_light"
+                android:paddingStart="30dp"
+                android:paddingLeft="10dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"/>
+
+            <EditText
+                android:id="@+id/usernameTv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/iran_sans_light"
+                android:hint="نام کاربری"
+                android:inputType="text"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/emailTv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/iran_sans_light"
+                android:hint="ایمیل"
+                android:inputType="textEmailAddress"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/ic_email"/>
+
+            <EditText
+                android:id="@+id/pwTv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/iran_sans_light"
+                android:hint="رمز ورود"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="14sp"
+                android:drawableRight="@drawable/ic_lock"
+                />
+
+            <Button
+                android:id="@+id/signUpBtn"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:background="@drawable/bg_edt"
+                android:fontFamily="@font/iran_sans_light"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="ثبت نام"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/directToLogin"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="70dp"
+                android:textColor="#AFA4B1"
+                android:fontFamily="@font/iran_sans_medium"
+                android:text="اکانت داری؟ وارد شو"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

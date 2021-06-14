@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:background="@drawable/ic_logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"  />
+
+        <EditText
+            android:id="@+id/nameTvLogin"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:hint="نام کاربری"
+            android:fontFamily="@font/iran_sans_light"
+            android:inputType="textEmailAddress"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:textSize="17sp"
+            android:drawableRight="@drawable/ic_person"
+            />
+        <EditText
+            android:id="@+id/pwTvLogin"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="textEnd"
+            android:hint="رمز ورود"
+            android:fontFamily="@font/iran_sans_light"
+            android:inputType="textPassword"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:textSize="17sp"
+            android:drawableRight="@drawable/ic_lock"/>
+        <Button
+            android:id="@+id/loginBtn"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_edt"
+            android:text="ورود"
+            android:fontFamily="@font/iran_sans_light"
+            android:textColor="#000"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:id="@+id/directToSignup"
+            android:layout_marginTop="20dp"
+            android:textColor="#AFA4B1"
+            android:fontFamily="@font/iran_sans_medium"
+            android:text="اکانت نداری؟ ثبت نام کن"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

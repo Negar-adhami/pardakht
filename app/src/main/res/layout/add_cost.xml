@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/titleET"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:paddingHorizontal="10dp"
+            android:hint="عنوان"
+            android:fontFamily="@font/iran_sans_light"
+            android:inputType="text"
+            android:layout_marginTop="40dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:textSize="17sp"
+            />
+        <EditText
+            android:id="@+id/amountET"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="textEnd"
+            android:hint="مقدار"
+            android:fontFamily="@font/iran_sans_light"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:textSize="17sp"/>
+        <Button
+            android:id="@+id/submitBtn"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/bg_edt"
+            android:text="ثبت"
+            android:fontFamily="@font/iran_sans_bold"
+            android:textColor="#000"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

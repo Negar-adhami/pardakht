@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ModiriatHesab</string>
+    <string name="preference_file_key">mhPrefs</string>
+    <string name="preference_username">mhUsername</string>
+</resources>
